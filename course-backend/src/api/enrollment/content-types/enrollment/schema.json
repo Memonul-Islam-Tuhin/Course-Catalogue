@@ -1,0 +1,11 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enrollments",
+  "info": { "singularName": "enrollment", "pluralName": "enrollments", "displayName": "Enrollment" },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "courseSlug": { "type": "string", "required": true },
+    "userId": { "type": "integer", "required": true },
+    "completed": { "type": "json" }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "learnhub-course-catalogue",
+  "version": "1.0.0",
+  "description": "A full-stack course catalogue.",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "npm run dev --prefix course-frontend",
+    "backend": "npm run develop --prefix course-backend",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend:build": "npm run build --prefix course-frontend",
+    "backend:build": "npm run build --prefix course-backend",
+    "build": "npm run frontend:build && npm run backend:build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
